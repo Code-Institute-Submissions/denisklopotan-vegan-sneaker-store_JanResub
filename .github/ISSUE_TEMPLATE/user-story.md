@@ -11,9 +11,9 @@ As a **role** I can **capability** so that **received benefit**
 
 TASKS:
 
-- []
-- []
-- []
+- [ ]
+- [ ]
+- [ ]
  
 REQUIREMENTS:
 
