@@ -11,10 +11,10 @@ html {
 }
 
 body {
-    background-image: url('/media/vans.jpg');
+    background-image: url('/media/løci.webp');
     background-size: cover;
     height: calc(100vh - 164px);
-    background-color: darkred;
+    background-color: darkgreen;
   }
 
 footer {
