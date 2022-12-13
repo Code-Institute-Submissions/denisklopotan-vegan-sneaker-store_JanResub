@@ -2,23 +2,29 @@
 
 ## Introduction
 
-Vegan Sneaker Store is something i always wished for when shopping online.
-I had hard time finding leather-free shoes or sneakers.
-Hence, a perfect idea for project. :)
+As market for leather-free and sustainable clothing is growing, there was a natural decision to make a website that goes with changing times.
+Eating vegetarian myself for decades and being more compassionate towards all life i started to look for alternative options to leather products.  
 
-*project is just in inception, due to my own struggles i could not make it, but still with encouragment from CI and friends i wish to continue and try to make by resubmissions. My apologies for this scarce presentation, wish you a nice day! Cheers :)
+It was not an easy task at first, it was hard to find leather-free shoes or sneakers that i liked. I would go to local stores to inspect labels, speak with staff and even then, assortment was very limited. Online you would think it would be easier, but in reality most sites did not post full materials list or labels at all! Even big brands. Googling further often brought conflicting informations..  
+
+So it became increasingly difficult and frustrating. Ofc i understood its a new industry, but still...
+I was often thinking: "Why is there no big sneaker store with just leather free sneakers??
+Time passed, i enrolled in web development course, still with this question popping from time to time.  
+
+Eventually i connected the dots, and hence, a perfect idea was born.. :)
+
+[Vegan Sneaker Store](https://vegan-sneaker-store.herokuapp.com/)
 
 ## Table of Contents
 * [Introduction](#introduction)
 * [User Experience Design (UX)](#user-experience-design-ux)
 * [Features](#features)
 * [Future Enhancements](#future-enhancements)
-* [Technologies Used](#technologies-used)
+* [Technologies](#technologies)
 * [Testing](#testing)
 * [Deployment](#deployment)
 * [Credits](#credits)
 * [Acknowledgements](#acknowledgements)
-
 
 ## User Experience Design (UX)
 
@@ -26,16 +32,57 @@ Hence, a perfect idea for project. :)
 
 ## Future Enhancements
 
-## Technologies Used
+## Technologies
+
+Main technologies used for building this ecommerce from ground up where Python & Django.
+To manage, store and host data as PostgreSQL we used ElephantSQL service.
+And to process payments we integrated Stripe payments platform.
+
+### Languages:
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
-- [Python](https://www.python.org/)
-- [Django] (https://www.djangoproject.com/)
-- [GitHub](https://github.com/)
-- [GitPod](https://www.gitpod.io/)
+- [Python](https://www.python.org)
+- [JavaScript](https://www.javascript.com)
+
+### Frameworks:
+
+- [Django](https://www.djangoproject.com)
+- [Bootstrap](https://getbootstrap.com/)
+
+### Libraries:
+
+- [Google Fonts](https://fonts.google.com)
+- [Font Awesome](https://fontawesome.com)
+
+### Databases:
+
+- [PostgreSQL](https://www.postgresql.org)
+- [ElephantSQL](https://www.elephantsql.com)
+
+### Payments:
+
+- [Stripe](https://stripe.com)
+
+### Development:
+
+- [GitPod](https://www.gitpod.io)
+
+### Hosting:
+
+- [GitHub](https://github.com)
 - [Heroku](https://www.heroku.com)
-- [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+- [Amazon Web Services (AWS)](https://aws.amazon.com)
+
+### Testing:
+
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools)
+
+### Tools:
+
+- [Balsamiq](https://balsamiq.com)
+- [DrawSQL](https://drawsql.app)
+- [Django Builder](https://djangobuilder.io)
 
 ## Testing
 
