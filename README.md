@@ -99,8 +99,8 @@ And to process payments we integrated Stripe payments platform.
 To test the application we performed several categories of testing:
 - validator, performance, manual, browser, device and unit testing.
 
-Due to the amount of testing data, testing was moved to separate file.
-- Full testing documentation can be found here: [TESTING.md](TESTING.md)
+Due to the amount of collected data, testing was moved to a separate file.
+- Full testing documentation can be found here [⮫TESTING.md](TESTING.md)
 
 To summarise, website passed all testing without any major issues.
 ***

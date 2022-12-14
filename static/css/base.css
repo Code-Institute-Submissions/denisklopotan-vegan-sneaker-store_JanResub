@@ -36,13 +36,13 @@ body {
 /* ------------- OPTIONAL ------------- */
 
 /* from Bulma */
-/* .icon {
+.icon {
     align-items: center;
     display: inline-flex;
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
-} */
+}
 
 /* .shop-now-button {
     background: black;
@@ -112,5 +112,16 @@ a {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }
