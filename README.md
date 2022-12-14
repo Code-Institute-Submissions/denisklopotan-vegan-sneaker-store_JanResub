@@ -14,24 +14,34 @@ Time passed, i enrolled in web development course, still with this question popp
 Eventually i connected the dots, and hence, a perfect idea was born.. :)
 
 [Vegan Sneaker Store](https://vegan-sneaker-store.herokuapp.com/)
-
+***
 ## Table of Contents
 * [Introduction](#introduction)
-* [User Experience Design (UX)](#user-experience-design-ux)
+* [Design (UX)](#design-ux)
 * [Features](#features)
-* [Future Enhancements](#future-enhancements)
 * [Technologies](#technologies)
 * [Testing](#testing)
+* [Bugs](#bugs)
 * [Deployment](#deployment)
 * [Credits](#credits)
 * [Acknowledgements](#acknowledgements)
+***
+## Design (UX)
 
-## User Experience Design (UX)
-
+### User stories
+### Wireframes
+### Data models
+***
 ## Features
 
-## Future Enhancements
-
+### Homepage
+#### Navbar
+### Product page
+### Authentication
+### Purchasing
+### Contact us
+### To be implemented
+***
 ## Technologies
 
 Main technologies used for building this ecommerce from ground up where Python & Django.
@@ -41,24 +51,24 @@ And to process payments we integrated Stripe payments platform.
 ### Languages:
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
-- [CSS3](https://en.wikipedia.org/wiki/CSS)
-- [Python](https://www.python.org)
-- [JavaScript](https://www.javascript.com)
+        - [CSS3](https://en.wikipedia.org/wiki/CSS)
+        - [Python](https://www.python.org)
+        - [JavaScript](https://www.javascript.com)
 
 ### Frameworks:
 
 - [Django](https://www.djangoproject.com)
-- [Bootstrap](https://getbootstrap.com/)
+        - [Bootstrap](https://getbootstrap.com/)
 
 ### Libraries:
 
 - [Google Fonts](https://fonts.google.com)
-- [Font Awesome](https://fontawesome.com)
+        - [Font Awesome](https://fontawesome.com)
 
 ### Databases:
 
 - [PostgreSQL](https://www.postgresql.org)
-- [ElephantSQL](https://www.elephantsql.com)
+        - [ElephantSQL](https://www.elephantsql.com)
 
 ### Payments:
 
@@ -71,8 +81,8 @@ And to process payments we integrated Stripe payments platform.
 ### Hosting:
 
 - [GitHub](https://github.com)
-- [Heroku](https://www.heroku.com)
-- [Amazon Web Services (AWS)](https://aws.amazon.com)
+        - [Heroku](https://www.heroku.com)
+        - [Amazon Web Services (AWS)](https://aws.amazon.com)
 
 ### Testing:
 
@@ -81,13 +91,23 @@ And to process payments we integrated Stripe payments platform.
 ### Tools:
 
 - [Balsamiq](https://balsamiq.com)
-- [DrawSQL](https://drawsql.app)
-- [Django Builder](https://djangobuilder.io)
-
+        - [DrawSQL](https://drawsql.app)
+        - [Django Builder](https://djangobuilder.io)
+***
 ## Testing
 
-### Bugs
+To test the application we performed several categories of testing:
+- validator, performance, manual, browser, device and unit testing.
 
+Due to the amount of testing data, testing was moved to separate file.
+- Full testing documentation can be found here: [TESTING.md](TESTING.md)
+
+To summarise, website passed all testing without any major issues.
+***
+## Bugs
+
+
+***
 ## Deployment
 
 ### GitHub
@@ -101,14 +121,33 @@ projects built entirely with front end languages  like HTML, CSS and JavaScript,
 to handle back end languages like Python, which  is why we're using Heroku for this deployment.
 
 - The live link can be found here: https://vegan-sneaker-store.herokuapp.com/
-
+***
 ## Credits
 
+### Code
+- 
+
+### Media
+- 
+
+### Study
 - [W3Schools](https://www.w3schools.com/)
 - [YouTube](https://www.youtube.com/)
-
+***
 ## Acknowledgements
+So...my 5 minutes of Oscars speech has finally came ;D
 
-In general, big big thanks to my mentor Jack Wachira, CI community, tutors and student support! :)
-Even though i stumble a lot, i would not even be here writing this without your support.
-I want to persevere and succeed, despite difficulty, thank you so much!
+Always, big big thanks to my mentor Jack Wachira, slack community, tutors and student support! :)  
+To my family, friends and colleagues for their understanding and support too!  
+
+NO, i was not abducted by aliens and i still love you all! I was just locked in my 'office' until i finish this lovely episode of life :))
+Even though i stumbled a lot along the way,
+I would not even be here writing this without your support.
+
+Did i mentioned student suport? ;) Man i tested you as much as i was tested! You guyz are awesome!! Kieron and Bethany and others, thank you so much with all my heart <3
+
+I wish us all to be best programmers and best humans as we can be..
+
+Last but not least, thank you Code Institute.  
+
+Om ॐ
