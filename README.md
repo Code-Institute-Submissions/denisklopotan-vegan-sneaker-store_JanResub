@@ -29,8 +29,14 @@ Eventually i connected the dots, and hence, a perfect idea was born.. :)
 ## Design (UX)
 
 ### User stories
+
+User stories can be found here: [V.S. Store User Stories](https://github.com/users/denisklopotan/projects/4)
+
 ### Wireframes
 ### Data models
+
+!!! a description of the e-commerce business model including marketing strategies in the README file. ???
+
 ***
 ## Features
 
