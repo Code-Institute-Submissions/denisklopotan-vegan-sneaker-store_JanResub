@@ -52,7 +52,7 @@ User stories can be found here: [V.S. Store User Stories](https://github.com/use
 
 Main technologies used for building this ecommerce from ground up where Python & Django.
 To manage, store and host data as PostgreSQL we used ElephantSQL service.
-And to process payments we integrated Stripe payments platform.
+And to process payments we integrated Stripe payments provider.
 
 ### Languages:
 
@@ -70,6 +70,14 @@ And to process payments we integrated Stripe payments platform.
 
 - [Google Fonts](https://fonts.google.com)
         - [Font Awesome](https://fontawesome.com)
+
+### Packages:
+
+- [Gunicorn](https://gunicorn.org/)
+        - [psycopg2](https://www.psycopg.org/)
+        - [Pillow](https://python-pillow.org/)
+        - [django-allauth](https://www.intenct.nl/projects/django-allauth/)
+        - [django-crispy-forms](https://github.com/django-crispy-forms/django-crispy-forms)
 
 ### Databases:
 
