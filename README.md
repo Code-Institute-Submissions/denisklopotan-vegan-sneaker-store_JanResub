@@ -78,6 +78,7 @@ And to process payments we integrated Stripe payments provider.
         - [Pillow](https://python-pillow.org/)
         - [django-allauth](https://www.intenct.nl/projects/django-allauth/)
         - [django-crispy-forms](https://github.com/django-crispy-forms/django-crispy-forms)
+        - [Stripe API](https://github.com/stripe/stripe-python)
 
 ### Databases:
 
