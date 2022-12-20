@@ -198,9 +198,9 @@ Full article on slack can be found [here](https://code-institute-room.slack.com/
 ***
 ## Deployment
 
-Since deployment documentation grew to quite significant size we will mention only main milestones here. For rest we created separate deployment file.
+Since deployment documentation grew to quite significant size we will mention only main milestones here.
 
-You can read full documentation here: [⮫DEPLOYMENT.md](DEPLOYMENT.md)
+For rest we created separate deployment file which you can read here: [⮫DEPLOYMENT.md](DEPLOYMENT.md)
 
 ### Milestones:
 
