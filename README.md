@@ -98,16 +98,28 @@ There are also 400 million Buddhist. One of the teachings prohibits taking the l
 
 From these few examples is seen that there is significant potential for this business on the market.
 
-### Marketing types
+### Marketing types used
 
-#### SEO marketing
+#### **SEO marketing**
+
 - meta tags
 - sitemap.xml and robots.txt
-#### Content marketing
-#### Social Media marketing
-- facebook page
-#### Email marketing
-- newsletter
+
+#### **Content marketing**
+
+
+
+#### **Social Media marketing**
+
+Social media marketing is important tool to use nowdays. We took advantage of well established platform **Facebook** to create our business page. Hopefuly it will further advertise and bring traffic to our site.
+
+#### **Email marketing**
+
+For email marketing we used **Mailchimp** service. We created Mailchimp account for our business and copied generated form into footer of our site.
+
+Embedded form provides simple interface for users to enter their email and subscribe to our **newsletter**.
+
+If you want to use Mailchimp for your site please visit their website [here](https://mailchimp.com/).
 
 ***
 ## Features
@@ -175,6 +187,10 @@ And to process payments we integrated Stripe payments provider.
 ### Payments:
 
 - [Stripe](https://stripe.com)
+
+### Marketing
+
+- [Mailchimp](https://mailchimp.com/)
 
 ### Testing:
 

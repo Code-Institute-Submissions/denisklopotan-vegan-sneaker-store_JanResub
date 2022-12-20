@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/løci.webp') no-repeat center center fixed;
+    background: url('/media/nike-sb-stefan-janoski-max-white-black.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: rgb(0, 0, 0);
@@ -11,15 +11,31 @@ body {
 }
 
 .logo {
-    color: darkgreen;
+    color: black;
     text-transform: uppercase;
 }
 
-/*  FOOTER  */
+.home-text {
+    color: rgb(0, 0, 0);
+}
+
+.bg-white {
+    background-color: #8eb08a !important;
+}
 
 footer {
-    background-color: darkgreen;
-    margin-top: 10px;
+    /* background-color: #71493f;
+    margin-top: 10px; */
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(106,106,129,0) 0%, rgba(84,47,0,1) 80%);
+}
+
+/* Mailchimp */
+#mc_embed_signup {
+    background: rgba(171, 148, 128, 0.668);
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+    /*width:600px;*/
 }
 
 /* ----------- ORIGINAL CSS ----------- */
@@ -93,7 +109,7 @@ footer {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: rgb(210, 200, 191);
 	z-index: -1;
 }
 
@@ -341,10 +357,3 @@ input[name='q']::placeholder {
     }
 }
 
-/* Mailchimp */
-#mc_embed_signup {
-    background:#fff;
-    clear:left;
-    font:14px Helvetica,Arial,sans-serif;
-    /*width:600px;*/
-}
