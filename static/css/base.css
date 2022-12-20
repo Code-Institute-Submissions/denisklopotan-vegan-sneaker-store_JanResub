@@ -6,7 +6,7 @@ body {
     background: url('/media/løci.webp') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: darkgreen;
+    color: rgb(0, 0, 0);
     font-family: 'Lato';
 }
 
@@ -18,14 +18,8 @@ body {
 /*  FOOTER  */
 
 footer {
-    position: fixed;
-    bottom: 0px;
-    right: 20px;
-    font-weight: 700;
-}
-
-.social-links {
-    text-align: right;
+    background-color: darkgreen;
+    margin-top: 10px;
 }
 
 /* ----------- ORIGINAL CSS ----------- */

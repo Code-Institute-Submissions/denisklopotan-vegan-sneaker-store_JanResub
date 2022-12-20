@@ -4,6 +4,7 @@
 * [Introduction](#introduction)
 * [Agile development](#agile-development)
 * [Features](#features)
+* [Marketing](#marketing)
 * [Technologies](#technologies)
 * [Testing](#testing)
 * [Bugs](#bugs)
@@ -81,6 +82,32 @@ For full details please check out our link on Github: [V.S. Store User Stories](
 ### Data models
 
 !!! a description of the e-commerce business model including marketing strategies in the README file. ???
+
+***
+## Marketing
+
+### Business model
+
+Vegan Sneaker Store's Business model is **Business to Consumer (B2C)**. Products and services are sold directly from V.S. Store to consumers who are the end-users.
+
+Customers of Vegan Sneaker Store would be clearly people eating Vegan / Vegetarian diet which is growing trend; people who support use of alternative, sustainable materials or care for animals. Last but not least, important demographic in this case is religious.
+
+More than billion people are Hindus who are traditionally vegetarian and consider cow a sacred animal, and also other forms of life. Most leather used in industry comes from cows, so this is one initiative to offset that.
+
+There are also 400 million Buddhist. One of the teachings prohibits taking the life of any person or animal. Many Buddhists interpret this to mean that you should not consume animals, as doing so would require killing. Buddhists with this interpretation usually follow a lacto-vegetarian diet.
+
+From these few examples is seen that there is significant potential for this business on the market.
+
+### Marketing types
+
+#### SEO marketing
+- meta tags
+- sitemap.xml and robots.txt
+#### Content marketing
+#### Social Media marketing
+- facebook page
+#### Email marketing
+- newsletter
 
 ***
 ## Features
