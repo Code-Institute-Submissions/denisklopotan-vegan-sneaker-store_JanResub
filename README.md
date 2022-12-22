@@ -1,6 +1,6 @@
 # Vegan Sneaker Store
 
-![Products](media/vegan-sneaker-store-logo-yellow-green.png)
+![Products](media/vegan-sneaker-store-high-resolution-color-logo%20(1).png)
 
 ## Table of Contents
 * [Introduction](#introduction)

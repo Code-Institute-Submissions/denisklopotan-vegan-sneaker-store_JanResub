@@ -27,6 +27,9 @@ class Product(models.Model):
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
+    # Favourites >custom model< field
+    favourites = models.ManyToManyField(User, related_name='favourites', blank=True)
+
 
     def __str__(self):
         return self.name
@@ -39,6 +42,7 @@ class Product(models.Model):
     #     else:
     #         return 0
 
+# Review >custom model<
 class Review(models.Model):
     product = models.ForeignKey(Product, related_name='reviews', on_delete=models.CASCADE)
     user = models.ForeignKey(User, related_name='reviews', on_delete=models.CASCADE)

@@ -7,7 +7,6 @@ from django.db.models.functions import Lower
 from .models import Product, Category, Review
 from .forms import ProductForm
 
-# Create your views here.
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -64,15 +63,24 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
+    # Favourites >custom model< view
+    # is_favourite = False
+    
+    # if product.favourites.filter(id=request.user.id).exists():
+    #     is_favourite = True
+
     context = {
         'product': product,
+        # 'is_favourite': is_favourite,
     }
 
-    # Add review
+    # Review >custom model< view
     if request.method == 'POST' and request.user.is_authenticated:
+        """ Post review if registered user """
         stars = request.POST.get('stars', 3)
         content = request.POST.get('content', '')
         review = Review.objects.create(product=product, user=request.user, stars=stars, content=content)
+
         print(review)
         return redirect('product_detail', product_id=product_id)
 
@@ -145,3 +153,27 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+# # Favourites >custom model< view
+# def favourites(request, product_id):
+#     """ Add / remove from favourites """
+#     product = get_object_or_404(Product, pk=product_id)
+#     if product.favourites.filter(id=request.user.id).exist():
+#         product.favourites.remove(request.user)
+#     else:
+#         product.favourites.add(request.user)
+        
+#     return render(request, 'products/product_detail.html')
+
+
+# def favourites_list(request, id):
+#     """ Add favourites to favorites list """
+#     user=request.user
+#     favourite_products = user.favourites.all()
+    
+#     context = {
+#         'favourite_products': favourite_products
+#     }
+
+#     return render(request, 'products/favourites_list.html', context)
