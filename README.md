@@ -35,10 +35,12 @@ Eventually i connected the dots, and hence, a perfect idea was born.. :)
 
 ### User stories
 
-To create user stories as per principles of agile development, we used kanban board in our development which is part of Github Projects.
+To create user stories as per principles of agile development, we used **kanban** board in our development which is part of Github Projects.
 We separated user stories into 5 logical categories, or milestones, and furthermore added assigned tasks and requirements. For illustrative purpose we will only list user stories with associated milestones here.
 
 For full details please check out our link on Github: [V.S. Store User Stories](https://github.com/users/denisklopotan/projects/4)
+
+![kanban](media/user-stories.png)
 
 #### EPIC | Navigation
 
@@ -88,9 +90,9 @@ For full details please check out our link on Github: [V.S. Store User Stories](
 ![Products](media/noimage.png)
 </details>
 
-### Data models
+### Database schema
 
-!!! a description of the e-commerce business model including marketing strategies in the README file. ???
+Database schema was created using online tool - [drawSQL](https://drawsql.app/).
 
 ***
 ## Marketing
@@ -109,19 +111,29 @@ From these few examples is seen that there is significant potential for this bus
 
 ### Marketing types used
 
-#### **SEO marketing**
+#### **SEO (Search Engine Optimization)**
 
-- meta tags
-- sitemap.xml and robots.txt
+In simple terms, SEO is process of improving our site to increase its visibility when people search for products or services related to our business in Google, Bing, and other search engines. The better visibility our pages have in search results, the more likely we are to garner attention and attract prospective and existing customers to our business.
+
+To improve our SEO rating we did the following:
+- Added `<title>` to the head of our HTML file
+- Added `<meta>` description and keywords collection to head of HTML
+- Used heading tags `<h1>`, `<h2>`, ..  by matter of importance
+- Marked important keywords in **Bold** formatting
+- Gave media files meaningful and descriptive names
+- using `rel` attributes and `aria` labels in our links
+- Created sitemap.xml and robots.txt
+- planned to use more `alt` attribute where applicable
 
 #### **Content marketing**
 
+At this point we are just building the brand so content marketing is not so developed as we would like. Most content would be provided trough newsletter or Faceboook page posts. Features to be implemented like blog posts would greatly improve this rating!
 
 #### **Social Media marketing**
 
 Social media marketing is important tool to use nowdays. We took advantage of well established platform **Facebook** to create our business page. Hopefuly it will further advertise and bring traffic to our site. [Link to page](https://www.facebook.com/VeganSneakerStore).
 
-![facebook](media/vegan-sneaker-store-facebook-page.png) 
+![facebook](media/facebook-business-page.png) 
 
 #### **Email marketing**
 
@@ -129,11 +141,13 @@ For email marketing we used **Mailchimp** service. We created Mailchimp account 
 
 Embedded form provides simple interface for users to enter their email and subscribe to our **newsletter**.
 
-![mailchimp](assets/) 
+![mailchimp](media/mailchimp-newsletter-form-box.png) 
 
 If you want to use Mailchimp for your site please visit their website [here](https://mailchimp.com/).
 
-#### Privacy policy
+### Privacy policy
+
+Lastly, to be compliant with GDPR or 'General Data Protection Regulation' and furthermore improve our sites rating we generated 'Privacy Policy' using online generator - [Privacy Policy Generator](https://www.privacypolicygenerator.info/). Link is embedded in the footer of the site.
 
 ***
 ## Features
@@ -155,6 +169,7 @@ If you want to use Mailchimp for your site please visit their website [here](htt
 #### Checkout
 ### Contact us
 ### To be implemented
+- Reduce load time of our site to improve user experience
 
 ***
 ## Technologies
