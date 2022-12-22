@@ -1,5 +1,7 @@
 # Vegan Sneaker Store
 
+![Products](media/vegan-sneaker-store-logo-yellow-green.png)
+
 ## Table of Contents
 * [Introduction](#introduction)
 * [Agile development](#agile-development)
@@ -79,6 +81,13 @@ For full details please check out our link on Github: [V.S. Store User Stories](
 * As a user I can like products so that i can save them to wishlist for future reference
 
 ### Wireframes
+
+<details>
+ <summary>Products</summary>
+
+![Products](media/noimage.png)
+</details>
+
 ### Data models
 
 !!! a description of the e-commerce business model including marketing strategies in the README file. ???
@@ -108,10 +117,11 @@ From these few examples is seen that there is significant potential for this bus
 #### **Content marketing**
 
 
-
 #### **Social Media marketing**
 
-Social media marketing is important tool to use nowdays. We took advantage of well established platform **Facebook** to create our business page. Hopefuly it will further advertise and bring traffic to our site.
+Social media marketing is important tool to use nowdays. We took advantage of well established platform **Facebook** to create our business page. Hopefuly it will further advertise and bring traffic to our site. [Link to page](https://www.facebook.com/VeganSneakerStore).
+
+![facebook](media/vegan-sneaker-store-facebook-page.png) 
 
 #### **Email marketing**
 
@@ -119,16 +129,30 @@ For email marketing we used **Mailchimp** service. We created Mailchimp account 
 
 Embedded form provides simple interface for users to enter their email and subscribe to our **newsletter**.
 
+![mailchimp](assets/) 
+
 If you want to use Mailchimp for your site please visit their website [here](https://mailchimp.com/).
+
+#### Privacy policy
 
 ***
 ## Features
 
 ### Homepage
 #### Navbar
-### Product page
-### Authentication
+#### Body
+#### Footer
+### Products
+#### Products page
+#### Product detail
+### Accounts
+#### Register / Login
+#### Product managment
+#### My profile
+#### Logout
 ### Purchasing
+#### Shopping bag
+#### Checkout
 ### Contact us
 ### To be implemented
 
@@ -143,13 +167,14 @@ And to process payments we integrated Stripe payments provider.
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
         - [CSS3](https://en.wikipedia.org/wiki/CSS)
-        - [Python](https://www.python.org)
         - [JavaScript](https://www.javascript.com)
+- [Python](https://www.python.org) is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.
+
 
 ### Frameworks:
 
-- [Django](https://www.djangoproject.com)
-        - [Bootstrap](https://getbootstrap.com/)
+- [Django](https://www.djangoproject.com) is a free and open-source, Python-based web framework that follows the model-views-template (MVT) architectural pattern. Django web framework comes with a wide range of features and tools that are ready to use out of the box. Thats why its often refferd to as: "Batteries Included framework".
+- [Bootstrap](https://getbootstrap.com/) is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
 
 ### Libraries:
 
@@ -168,12 +193,12 @@ And to process payments we integrated Stripe payments provider.
 
 ### Development:
 
-- [GitPod](https://www.gitpod.io)
+- [GitPod](https://www.gitpod.io) is an open-source developer platform for remote development. Its an online tool that helps to set up open-source projects locally. In short we can describe Gitpod as an online VScode Editor.
 
 ### Databases:
 
-- [PostgreSQL](https://www.postgresql.org)
-        - [ElephantSQL](https://www.elephantsql.com)
+- [PostgreSQL](https://www.postgresql.org) also known as Postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance. It was originally named POSTGRES, referring to its origins as a successor to the Ingres database developed at the University of California, Berkeley. In 1996, the project was renamed to PostgreSQL to reflect its support for SQL.
+- [ElephantSQL](https://www.elephantsql.com) is a PostgreSQL database hosting service. ElephantSQL will manage administrative tasks of PostgreSQL, such as installation, upgrades to latest stable version and backup handling.
 
 ### Hosting:
 
@@ -182,11 +207,11 @@ And to process payments we integrated Stripe payments provider.
 
 ### Static:
 
-- [Amazon Web Services (AWS)](https://aws.amazon.com)
+- [Amazon Web Services (AWS)](https://aws.amazon.com) is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis. These cloud computing web services provide distributed computing processing capacity and software tools via AWS server farms. 
 
 ### Payments:
 
-- [Stripe](https://stripe.com)
+- [Stripe](https://stripe.com) Inc. is a financial technology services and software company that provides infrastructure for online payments. The company provides a global online payment system for businesses and individuals to send and receive online payments, as well as offers tools and infrastructure for creating online e-commerce platforms, on-demand marketplaces, and crowdfunding platforms.
 
 ### Marketing
 
@@ -279,14 +304,15 @@ Alongside Code Institute's LMS tutorials i used following websites for education
 ### Code
 
 - [Stack Overflow](https://stackoverflow.com/)
+- [Product reviews - How to build an Ecommerce website using Django](https://www.youtube.com/watch?v=Y5vvGQyHtpM)
+   - Github repo: [saulgadgets](https://github.com/SteinOveHelset/saulgadgets)
 - [Create Contact Form in Django for any website](https://www.youtube.com/watch?v=lSgRWA4PMt4)
 
 ### Media
 
-Royalty free media for our site we downloaded from free image hosting sites:
-
-- [Unsplash](https://unsplash.com/) &
-        [Pexels](https://www.pexels.com/)
+- Royalty free media for our site we downloaded from free image hosting sites [Unsplash](https://unsplash.com/) & [Pexels](https://www.pexels.com/)
+- For making background gradients we used online tool: [CSS Gradient](https://cssgradient.io/) 
+- Logo was created on [LOGO.com](https://logo.com/)  
 
 ***
 ## Acknowledgements
