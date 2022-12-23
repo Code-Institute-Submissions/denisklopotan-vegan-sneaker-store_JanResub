@@ -21,32 +21,57 @@
 
 To check markup validity of Web documents as HTML, we used: [W3C Markup Validation Service](https://validator.w3.org/).
 
-![](media/testing/html.png)
+Unfortunately since Django tags are conflicting with standard HTML markup, we could not fix those errors.
+
+![html](media/html-testing.png)
+![html](media/html-testing2.png)
 
 ### CSS
 
-To check Cascading Style Sheets (CSS) validity we used: [W3C CSS Validation Service - Jigsaw](https://validator.w3.org/).
+To check Cascading Style Sheets (CSS) validity we used: [W3C CSS Validation Service - Jigsaw](https://jigsaw.w3.org/css-validator/). No errors found.
 
-![](media/testing/css.png)
+![CSS](media/css-test.png)
 
 ### Python
 
-To check our Python code against style conventions in PEP 8 we used: [pep8 - Python style guide checker](https://pypi.org/project/pep8/).
+For simple python check we used [PythonChecker](https://www.pythonchecker.com/). Most code tested for python logic showed 100%
 
-Since online validator was not available at this point we needed to install app in our project and perform validation trough terminal.
+![Python](media/python-testing.png)
+
+Additionaly to check our Python code against style conventions in PEP 8 we plan to use: [pep8 - Python style guide checker](https://pypi.org/project/pep8/).
+
+Since online validator was not available at this point we need to install app in our project and perform validation trough terminal.
 Documentation [page](https://pep8.readthedocs.io/en/release-1.7.x/)
-
-...maybe try https://www.pythonchecker.com/ ?
-
-![](media/testing/python.png)
 
 ### JavaScript
 
 To detect errors and potential problems in our JavaScript code we used: [JSHint](https://jshint.com/)
 
-https://codebeautify.org/jsvalidate ??
+![js](media/js-testing1.png)
 
-![](media/testing/js.png)
+<details>
+ <summary>1</summary>
+
+![js](media/js-testing2.png)
+</details>
+
+<details>
+ <summary>2</summary>
+
+![js](media/js-testing3.png)
+</details>
+
+<details>
+ <summary>3</summary>
+
+![js](media/js-testing4.png)
+</details>
+
+<details>
+ <summary>4</summary>
+
+![js](media/js-testing5.png)
+</details>
 
 ## Performance Testing
 
@@ -58,7 +83,33 @@ When auditing a page, Lighthouse runs a barrage of tests against the page, and t
 
 Lighthouse comes integrated by default as part of development tools (DevTools) in Google Chrome browser. You can read more about it [here](https://developer.chrome.com/docs/lighthouse/overview/).
 
-![](media/testing/lighthouse.png)
+Website excelled in performance, while other areas have more room for improvement.
+
+![lighthouse](media/lighthouse-summary.png)
+
+<details>
+ <summary>Performance</summary>
+
+![lighthouse](media/lighthouse-performance.png)
+</details>
+
+<details>
+ <summary>Accessibility</summary>
+
+![lighthouse](media/lighthouse-accessibility.png)
+</details>
+
+<details>
+ <summary>Best Practices</summary>
+
+![lighthouse](media/lighthouse-best-practices.png)
+</details>
+
+<details>
+ <summary>SEO</summary>
+
+![lighthouse](media/lighthouse-SEO.png)
+</details>
 
 ## Browser Testing
 
@@ -123,6 +174,8 @@ To be implemented:
 - Favorites feature is currently not working so link is not functional
 
 ## Unit Testing
+
+To be added.
 
 [⮪ Return back to readme](README.md) | [Back to Top 🠕](#testing)
 

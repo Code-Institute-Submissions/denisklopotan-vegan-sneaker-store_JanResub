@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/nike-sb-stefan-janoski-max-white-black.jpg') no-repeat center center fixed;
+    background: url('/media/nike-sb-stefan-janoski-max-white-black-homepage.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: rgb(0, 0, 0);
@@ -24,8 +24,6 @@ body {
 }
 
 footer {
-    /* background-color: #71493f;
-    margin-top: 10px; */
     background: rgb(2,0,36);
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(106,106,129,0) 0%, rgba(84,47,0,1) 80%);
 }
@@ -35,7 +33,6 @@ footer {
     background: rgba(171, 148, 128, 0.668);
     clear:left;
     font:14px Helvetica,Arial,sans-serif;
-    /*width:600px;*/
 }
 
 /* ----------- ORIGINAL CSS ----------- */
@@ -70,7 +67,7 @@ footer {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important; /* use important to override link colors for a elements */
     border: 1px solid black;
 }
 
@@ -356,4 +353,3 @@ input[name='q']::placeholder {
         padding: .25rem .5rem !important;
     }
 }
-

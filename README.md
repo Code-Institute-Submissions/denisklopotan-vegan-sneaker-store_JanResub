@@ -1,6 +1,6 @@
 # Vegan Sneaker Store
 
-![Products](media/vegan-sneaker-store-high-resolution-color-logo%20(1).png)
+![Products](media/vegan-sneaker-store-high-resolution-color-logo.png)
 
 ## Table of Contents
 * [Introduction](#introduction)
@@ -84,15 +84,39 @@ For full details please check out our link on Github: [V.S. Store User Stories](
 
 ### Wireframes
 
-<details>
- <summary>Products</summary>
+Wireframes provided are created in [Balsamiq](https://balsamiq.com).
 
-![Products](media/noimage.png)
+![wireframes](media/wireframes-home.png)
+
+<details>
+ <summary>Products list</summary>
+
+![wireframes](media/wireframes-products.png)
+</details>
+
+<details>
+ <summary>Products detail</summary>
+
+![wireframes](media/wireframes-product-detail.png)
+</details>
+
+<details>
+ <summary>Form example</summary>
+
+![wireframes](media/wireframes-form.png)
+</details>
+
+<details>
+ <summary>Mobile example</summary>
+
+![wireframes](media/wireframes-mobile.png)
 </details>
 
 ### Database schema
 
 Database schema was created using online tool - [drawSQL](https://drawsql.app/).
+
+![drawSQL](media/drawSQL-database-schema.png)
 
 ***
 ## Marketing
@@ -153,23 +177,153 @@ Lastly, to be compliant with GDPR or 'General Data Protection Regulation' and fu
 ## Features
 
 ### Homepage
-#### Navbar
-#### Body
-#### Footer
-### Products
-#### Products page
-#### Product detail
+Main homepage contais collapsible
+![home](media/homepage.png) 
+
+### Navbar
+![navbar](media/navbar.png)
+
+<details>
+<summary>Products dropdown</summary>
+
+![navbar](media/navbar-dropdown.png)  
+</details>
+
+<details>
+<summary>Account dropdown</summary>
+
+![navbar](media/account-dropdown.png) 
+</details>
+
+### Body
+![body](media/body.png)
+
+### Footer
+![footer](media/footer.png) 
+
+### Products list
+![products](media/products-list.png) 
+
+<details>
+<summary>Category selection</summary>
+
+![products](media/by-category.png)  
+</details>
+
+<details>
+<summary>Category selector</summary>
+
+![products](media/categories.png)  
+</details>
+
+### Product detail
+![products](media/product-detail.png) 
+
+<details>
+<summary>Size and quantity selector</summary>
+
+![accounts](media/size-quantity.png)  
+</details>
+
+<details>
+<summary>User reviews</summary>
+
+![accounts](media/review.png)  
+</details>
+
 ### Accounts
-#### Register / Login
-#### Product managment
-#### My profile
-#### Logout
-### Purchasing
-#### Shopping bag
-#### Checkout
+
+![accounts](media/profile.png)  
+
+<details>
+<summary>Sign In</summary>
+
+![accounts](media/sign-in.png)  
+</details>
+
+<details>
+<summary>Sign Up</summary>
+
+![accounts](media/sign-up.png)  
+</details>
+
+<details>
+<summary>Sign Out</summary>
+
+![accounts](media/signout.png)  
+</details>
+
+<details>
+<summary>Product Managment</summary>
+
+![accounts](media/product-managment.png)  
+</details>
+
+### Shopping bag
+![shoppingbag](media/shopping-bag.png) 
+
+<details>
+<summary>Pop-up message - Added to bag</summary>
+
+![navbar](media/success-message.png) 
+</details>
+
+### Checkout
+![checkout](media/checkout.png) 
+<details>
+<summary>Checkout - part 2</summary>
+
+![checkout](media/checkout2.png) 
+</details>
+
+<details>
+<summary>Pop-up message - Order Processed</summary>
+
+![navbar](media/order-processed.png) 
+</details>
+
+<details>
+<summary>Order summary</summary>
+
+![checkout](media/order-summary.png) 
+</details>
+
 ### Contact us
+![contact](media/contact.png) 
+
+### Mobile
+
+![mobile](media/mobile-home.png) 
+
+<details>
+<summary>Category dropdown</summary>
+
+![mobile](media/mobile-category-dropdown.png) 
+</details>
+
+<details>
+ <summary>Footer and Search</summary>
+
+![mobile](media/mobile-footer-search-dropdown.png) 
+</details>
+
+<details>
+ <summary>Product detail</summary>
+
+![mobile](media/mobile-product-detail.png) 
+</details>
+
+<details>
+ <summary>Form example</summary>
+
+![mobile](media/mobile-checkout.png) 
+</details>
+
 ### To be implemented
-- Reduce load time of our site to improve user experience
+
+Features to implement:
+
+- Add to wishlist / favorites and wishlist page
 
 ***
 ## Technologies
