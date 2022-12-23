@@ -63,15 +63,14 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
-    # Favourites >custom model< view
-    # is_favourite = False
-    
-    # if product.favourites.filter(id=request.user.id).exists():
-    #     is_favourite = True
+    is_favorite = False
+
+    if product.favourites.all().filter(id=request.user.id).exists():
+        is_favorite = True
 
     context = {
         'product': product,
-        # 'is_favourite': is_favourite,
+        'is_favorite': is_favorite,
     }
 
     # Review >custom model< view
@@ -155,6 +154,20 @@ def delete_product(request, product_id):
     return redirect(reverse('products'))
 
 
+# Favourites >custom model< view
+def add_remove_favorite(request, product_id):
+    """ Add / remove from favorite """
+    print(request)
+
+    product = get_object_or_404(Product, pk=product_id)
+
+    if product.favourites.filter(id=request.user.id).exists():
+        product.favourites.remove(request.user)
+    else:
+        product.favourites.add(request.user)
+
+    return redirect('product_detail', product_id=product_id)
+
 # # Favourites >custom model< view
 # def favourites(request, product_id):
 #     """ Add / remove from favourites """
@@ -165,15 +178,3 @@ def delete_product(request, product_id):
 #         product.favourites.add(request.user)
         
 #     return render(request, 'products/product_detail.html')
-
-
-# def favourites_list(request, id):
-#     """ Add favourites to favorites list """
-#     user=request.user
-#     favourite_products = user.favourites.all()
-    
-#     context = {
-#         'favourite_products': favourite_products
-#     }
-
-#     return render(request, 'products/favourites_list.html', context)

@@ -52,10 +52,15 @@
                     {% endif %}
 
                     <!-- Favourites button -->
-                    {% if is_favourite %}
-                        <i class="fas fa-heart fa-lg"></i>
-                    {% else %}
-                        <i class="far fa-heart fa-lg"></i>
+                    {% if is_favorite and request.user.is_authenticated %}
+                        <a href="{% url 'add_remove_favorite' product.id %}" class="">
+                            <i class="far fa-heart fa-lg"></i>
+                        </a>
+                    {% endif %}
+                    {% if request.user.is_authenticated and not is_favorite %}
+                        <a href="{% url 'add_remove_favorite' product.id %}" class="">
+                            <i class="fas fa-heart fa-lg"></i>
+                        </a>
                     {% endif %}
                     <!-- Favourites end -->
                     

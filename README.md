@@ -177,12 +177,14 @@ Lastly, to be compliant with GDPR or 'General Data Protection Regulation' and fu
 ## Features
 
 ### Homepage
-Main homepage contais collapsible
+Homepage consists of top navbar which is collapsible on mobile screens, main section with shop now button and footer. More about it in the following sections.
 ![home](media/homepage.png) 
 
 ### Navbar
+Navbar contains store Logo / title on the left, search bar in the top middle, category dropdowns below it, account, favorites and shopping bag links on the top right. Underneath is delivery banner showing delivery treshold. All the links in dropdowns lead to their respectible pages.
 ![navbar](media/navbar.png)
 
+ALL PRODUCTS, SNEAKERS, SPECIAL OFFERS and My Account contain dropdown links.
 <details>
 <summary>Products dropdown</summary>
 
@@ -196,12 +198,15 @@ Main homepage contais collapsible
 </details>
 
 ### Body
+Contains button link to products page.
 ![body](media/body.png)
 
 ### Footer
+Footer contains link to Contact form, Social media sites like Facebook business page, Privacy Policy and on the right Mailchimp form with which users can subscribe to newsletter.
 ![footer](media/footer.png) 
 
 ### Products list
+Product page contains list of products which can be sorted by categories using category selector or selecting from the dropdown menu.
 ![products](media/products-list.png) 
 
 <details>
@@ -217,6 +222,7 @@ Main homepage contais collapsible
 </details>
 
 ### Product detail
+Product detail page showcases: Product title, description, price, rating, category, favorites button, size selector, quantity selector, buttons, product review form and if user is admin; it contains edit|delete buttons for product managment.
 ![products](media/product-detail.png) 
 
 <details>
@@ -232,7 +238,7 @@ Main homepage contais collapsible
 </details>
 
 ### Accounts
-
+Users have option to Login / Register by which they can access and edit their user profile and see also order history. If authenticated user is Admin, it can access roduct Managment panel from which it can edit or delete store products without need to go to admin panel.
 ![accounts](media/profile.png)  
 
 <details>
@@ -260,6 +266,7 @@ Main homepage contais collapsible
 </details>
 
 ### Shopping bag
+Shopping bag allows us to adjust quantity inside bag itself and provides link to product page or checkout. After order has been succesfuly added we are informed by pop-up message in top right corner.
 ![shoppingbag](media/shopping-bag.png) 
 
 <details>
@@ -269,6 +276,7 @@ Main homepage contais collapsible
 </details>
 
 ### Checkout
+Checkout page provides billing form connected with Stripe, our order details and link to checkout. After order has been succesfully placed we are notified via pop-up message and presented with order summary.
 ![checkout](media/checkout.png) 
 <details>
 <summary>Checkout - part 2</summary>
@@ -279,7 +287,7 @@ Main homepage contais collapsible
 <details>
 <summary>Pop-up message - Order Processed</summary>
 
-![navbar](media/order-processed.png) 
+![checkout](media/order-processed.png) 
 </details>
 
 <details>
@@ -289,9 +297,11 @@ Main homepage contais collapsible
 </details>
 
 ### Contact us
+Simple form for user to contact admin or store owner.
 ![contact](media/contact.png) 
 
 ### Mobile
+Mobile page is fully responsive and contains hamburger icon or toggler which is collapsible. It contains our navbar links and menus. As we can see they are still  
 
 ![mobile](media/mobile-home.png) 
 
@@ -323,7 +333,8 @@ Main homepage contais collapsible
 
 Features to implement:
 
-- Add to wishlist / favorites and wishlist page
+- Password recovery
+- Blog post
 
 ***
 ## Technologies
@@ -432,6 +443,7 @@ So by deleting 'charge' instance and reverting back to original solved the issue
         grand_total = round(intent.charges.data[0].amount / 100, 2)
 
 Full article on slack can be found [here](https://code-institute-room.slack.com/archives/C7HS3U3AP/p1669282486321559).
+
 ***
 ## Deployment
 
