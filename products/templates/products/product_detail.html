@@ -44,12 +44,6 @@
                         <small class="text-muted">No Rating</small>
                     {% endif %}
 
-                    <!-- {% if product.get_rating %}
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.get_rating|floatformat:1 }} / 5</small>
-                    {% else %}
-                        <small class="text-muted">No Rating</small>
-                    {% endif %} -->
-
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
                             <a href="{% url 'edit_product' product.id %}">Edit</a> | 

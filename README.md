@@ -5,8 +5,8 @@
 ## Table of Contents
 * [Introduction](#introduction)
 * [Agile development](#agile-development)
-* [Features](#features)
 * [Marketing](#marketing)
+* [Features](#features)
 * [Technologies](#technologies)
 * [Testing](#testing)
 * [Bugs](#bugs)

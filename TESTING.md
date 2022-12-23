@@ -86,7 +86,41 @@ Loading website, navigating, opening links, shopping, authenticating as user or 
 
 ## Manual Testing
 
+Manual testing was performed alongside with readme section of **Features**.
+All features listed there where proven to work as espected, as follows:
 
+Homepage with:
+- Navbar
+  - All navbar dropdown menus and search bar work as expected, except Favorites feature which is to be implemented
+- Body
+   - Shop now button brings us to the products page
+- Footer
+   - media links, contact and mailchimp form works
+
+Products:
+- Products page
+   - Clicking on individual products brings us Product detail page
+- Product detail
+   - Choosing sizes quantity and adding to bag works properly
+
+Accounts:
+- Register / Login
+   - New users can register and registered log in
+- Product managment
+   - Updating product fields works as expected
+- My profile
+   - On personal profile details can be updated
+- Logout
+
+Purchasing
+- Shopping bag
+   - Updating item quantity in bag works
+- Checkout form is working properly and orders are placed
+
+Contact us form
+
+To be implemented:
+- Favorites feature is currently not working so link is not functional
 
 ## Unit Testing
 
