@@ -1,3 +1,5 @@
+/* --- MAIN --- */
+
 html {
     height: 100%;
 }
@@ -23,19 +25,53 @@ body {
     background-color: #8eb08a !important;
 }
 
+/*** FOOTER ***/
+
 footer {
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(106,106,129,0) 0%, rgba(84,47,0,1) 80%);
+    color: lightgray;
+    background-color: #472c19;
 }
 
-/* Mailchimp */
+.footer-title {
+    color: wheat;
+}
+
+.footer-links {
+    color: #28a745;
+}
+
+.footer-links:hover {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+.copyright-banner {
+    color: wheat;
+    background-color: #342211;
+}
+
+/* --- MAILCHIMP FORM --- */
+
 #mc_embed_signup {
-    background: rgba(171, 148, 128, 0.668);
+    color: white;
+    background: #957050;
     clear:left;
-    font:14px Helvetica,Arial,sans-serif;
 }
 
-/* ----------- ORIGINAL CSS ----------- */
+#mc_embed_signup form {
+    margin-right: 0;
+}
+
+#mc_embed_signup .button {
+    /* background-color: #28a745; */
+    background-color: #5c3b23;
+    text-transform: uppercase;
+}
+
+#mc_embed_signup .button:hover {
+    /* background-color: darkgreen; */
+    background-color: #342211;
+}
 
 /* from Bulma */
 .icon {
@@ -133,7 +169,7 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-/* bootstrap toasts */
+/* --- BOOTSTRAP TOASTS --- */
 
 .message-container {
     position: fixed;
@@ -162,7 +198,8 @@ input[name='q']::placeholder {
     right: 36px;
 }
 
-/* Convenience classes - colors copied from Bootstrap */
+/* --- CONVENIENCE CLASSES - colors copied from Bootstrap --- */
+
 .arrow-primary {
     border-bottom-color: #007bff !important;
 }
@@ -201,16 +238,35 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/*  MEDIA QUERIES  */
+/* --- PRODUCT FORM --- */
 
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+.btn-file {
+    position: relative;
+    overflow: hidden;
 }
 
-/* Allauth form formatting */
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    border-color: #dc3545;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-radius: 0;
+}
+
+/* --- ALLAUTH FORM FORMATTING --- */
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
@@ -264,35 +320,16 @@ input[name='q']::placeholder {
 	color: #17a2b8; /* text-info */
 }
 
-/* Product Form */
+/* --- MEDIA QUERIES --- */
 
-.btn-file {
-    position: relative;
-    overflow: hidden;
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
 }
 
-.btn-file input[type="file"] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.custom-checkbox .custom-control-label::before {
-    border-radius: 0;
-    border-color: #dc3545;
-}
-
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #dc3545;
-    border-color: #dc3545;
-    border-radius: 0;
-}
-
-/* fixed top navbar only on medium and up */
+/* Fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -307,7 +344,7 @@ input[name='q']::placeholder {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
+/* Pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;

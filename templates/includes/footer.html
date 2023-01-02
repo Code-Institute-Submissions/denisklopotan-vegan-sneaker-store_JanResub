@@ -3,36 +3,37 @@
         <section class="footer">
             <div class="row">
                 <div class="col-12 page-header mb-4 mt-4">
-                    <h2 class="text-uppercase">Stay in touch:</h2>
+                    <h2 class="text-uppercase footer-title">Stay in touch:</h2>
                     <hr class="block-divider block-divider--short">
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 mb-4">
-                    <div class="mb-4">
-                        <h3>Contact Us</h3>
-                        <p>Have questions?</p>
-                        <a href="{% url 'contact' %}" aria-label="Send me an email (opens in a new tab)">Send us a message</a>
+                    <div class="mb-3">
+                        <h4>Contact Us</h4>
+                        <p>Have questions? Recommendations?</p>
+                        <a href="{% url 'contact' %}" aria-label="Send me an email (opens in a new tab)" class="footer-links"><i class="fas fa-at"></i> Send us a message</a>
+                        <hr>
+                    </div>
+                    <div class="mb-3">
+                        <h4>Social Media</h4>
+                        <a href="https://www.facebook.com/VeganSneakerStore" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook! (opens in a new tab)" class="footer-links"><i class="fab fa-facebook-square"></i> Follow us on Facebook</a>
+                        <hr>
                     </div>
                     <div>
-                        <h3>Social</h3>
-                        <p>Keep up to date with all our latest offers</p>
-                        <a href="mailto:denisklopotan@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Send me an email (opens in a new tab)" class="fas fa-at fa-lg mr-2"></a>
-                        <a href="https://www.facebook.com/VeganSneakerStore" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook! (opens in a new tab)" class="fab fa-facebook-square fa-lg mr-2"></a>
-                        <a href="https://www.linkedin.com/in/denis-klopotan-8397b1130/" target="_blank" rel="noopener noreferrer" aria-label="Visit my Linkedin page (opens in a new tab)" class="fab fa-linkedin fa-lg mr-2"></a>
-                        <a href="https://github.com/denisklopotan/vegan-sneaker-store" target="_blank" rel="noopener noreferrer" aria-label="Visit my Github page (opens in a new tab)" class="fab fa-github fa-lg"></a>
-                    </div>
-                    <div>
-                        <a href="https://www.privacypolicygenerator.info/live.php?token=5x1xM9QUllTeq5eyJE52xdDtYHXc27zT" target="_blank" rel="noopener">Privacy Policy</a>
+                        <a class="footer-links" href="https://www.privacypolicygenerator.info/live.php?token=5x1xM9QUllTeq5eyJE52xdDtYHXc27zT" target="_blank" rel="noopener">Privacy Policy</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <h2>Subscribe!</h2>
+                    <h4>Subscribe!</h4>
                     <p>Get exclusive offers and discount codes by subscribing to our monthly newsletter</p>
                     {% include 'includes/mailchimp.html' %}
-                    <p class="mb-4">Copyright © 2022 | Denis Klopotan</p>
                 </div>
             </div>
         </section>
+    </div>
+    <div class="d-flex justify-content-center copyright-banner">
+        <p class="m-1">Copyright © 2023 | Denis Klopotan <a href="https://github.com/denisklopotan/vegan-sneaker-store" target="_blank" rel="noopener noreferrer" aria-label="Visit my Github page (opens in a new tab)" class="footer-links fab fa-github"></a>
+        </p>
     </div>
 </footer>
