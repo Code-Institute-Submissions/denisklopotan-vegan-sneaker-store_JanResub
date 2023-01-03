@@ -421,6 +421,9 @@ To summarise, website passed all testing without any major issues.
 ***
 ## Bugs
 
+Footer width on My Profile page
+
+
 ### Webhooks failing *solved
 
 While following tutorial exactly as explained i still got webhooks failing. After consulting on slack and with tutors i found out the issue. It was due to module update for Stripe webhook handler that in my case was not necessary. I just needed to revert to original tutorial and it worked!

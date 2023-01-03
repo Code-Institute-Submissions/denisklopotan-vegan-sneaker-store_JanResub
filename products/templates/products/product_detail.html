@@ -44,25 +44,29 @@
                         <small class="text-muted">No Rating</small>
                     {% endif %}
 
+                    <!-- Wishlist button -->
+                    {% if is_favorite and request.user.is_authenticated %}
+                    <p class="small mt-1 mb-0">	
+                        <a class="text-success" href="{% url 'add_remove_favorite' product.id %}">
+                            <i class="fas fa-heart mr-1"></i>
+                        </a>
+                    </p>
+                    {% endif %}
+                    {% if request.user.is_authenticated and not is_favorite %}
+                    <p class="small mt-1 mb-0">
+                        <a class="text-success" href="{% url 'add_remove_favorite' product.id %}">
+                            <i class="far fa-heart mr-1"></i>
+                        </a>
+                    </p>
+                    {% endif %}
+                    <!-- Wishlist end -->
+
                     {% if request.user.is_superuser %}
-                        <small class="ml-3">
+                        <small>
                             <a href="{% url 'edit_product' product.id %}">Edit</a> | 
                             <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                         </small>
                     {% endif %}
-
-                    <!-- Favourites button -->
-                    {% if is_favorite and request.user.is_authenticated %}
-                        <a href="{% url 'add_remove_favorite' product.id %}" class="">
-                            <i class="far fa-heart fa-lg"></i>
-                        </a>
-                    {% endif %}
-                    {% if request.user.is_authenticated and not is_favorite %}
-                        <a href="{% url 'add_remove_favorite' product.id %}" class="">
-                            <i class="fas fa-heart fa-lg"></i>
-                        </a>
-                    {% endif %}
-                    <!-- Favourites end -->
                     
                     <p class="mt-3">{{ product.description }}</p>
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
@@ -72,7 +76,7 @@
                             {% if s %}
                                 <div class="col-12">
                                     <p><strong>Size:</strong></p>
-                                    <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                    <select class="form-control w-50" name="product_size" id='id_product_size'>
                                         <option value="36">36</option>
                                         <option value="37">37</option>
                                         <option value="38">38</option>
@@ -92,7 +96,7 @@
                                 <div class="form-group w-50">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <button class="decrement-qty btn btn-black rounded-0" 
+                                            <button class="decrement-qty btn btn-all" 
                                                 data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
                                                 <span class="icon">
                                                     <i class="fas fa-minus"></i>
@@ -104,7 +108,7 @@
                                             data-item_id="{{ product.id }}"
                                             id="id_qty_{{ product.id }}">
                                         <div class="input-group-append">
-                                            <button class="increment-qty btn btn-black rounded-0"
+                                            <button class="increment-qty btn btn-all"
                                                 data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
                                                 <span class="icon">
                                                     <i class="fas fa-plus"></i>
@@ -116,13 +120,13 @@
                             </div>
 
                             <div class="col{% if s %}-12 mt-2{% endif %}">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
-                                    <span class="icon">
+                                <a href="{% url 'products' %}" class="btn btn-reverse mt-5">
+                                    <span class="icon w-auto">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
-                                    <span class="text-uppercase">Keep Shopping</span>
+                                    <span class="text-uppercase">Back To Shop</span>
                                 </a>
-                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                                <input type="submit" class="btn btn-all text-uppercase mt-5" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% endwith %}
@@ -169,7 +173,7 @@
                                         <textarea class="textarea w-50" name="content"></textarea>
                                     </div>
                                 </div>
-                                <button class="button">Submit</button>
+                                <button class="btn btn-all text-uppercase">Submit</button>
                             </form>
                         {% else %}
                             <p>Please sign in to add review!</p>

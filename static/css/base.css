@@ -9,12 +9,6 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: rgb(0, 0, 0);
-    font-family: 'Lato';
-}
-
-.logo {
-    color: black;
-    text-transform: uppercase;
 }
 
 .home-text {
@@ -25,7 +19,84 @@ body {
     background-color: #8eb08a !important;
 }
 
-/*** FOOTER ***/
+/* --- BUTTONS --- */
+
+.btn-all {
+    background: #342211;
+    color: wheat;
+}
+
+.btn-all:hover,
+.btn-all:active,
+.btn-all:focus {
+    background: #342211;
+    color: wheat;
+}
+
+.btn-reverse {
+    background: #957050;
+    color: wheat !important; /* use important to override link colors for a elements */
+}
+
+.btn-reverse:hover,
+.btn-reverse:active,
+.btn-reverse:focus {
+    background: #342211;
+    color: wheat !important;
+}
+
+.border-all {
+    border: 1px solid #342211 !important;
+}
+
+.category-badge {
+    color: #342211 !important;
+}
+
+.border-badge {
+    border: 2px solid #342211 !important;
+}
+
+a.category-badge > span.badge:hover {
+    background: #342211 !important;
+    color: wheat !important;
+}
+
+/* back to top button */
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+/* --- HEADER --- */
+
+.navbar-logo {
+    width: fit-content;
+    color: #342211 !important;
+    text-transform: uppercase;
+    /* font-family: 'Antic Didone', cursive; */
+}
+
+/* topnav icons */
+.search-icon, .user-icon, .wishlist-icon, .bag-icon {
+    color: #342211 !important;
+}
+
+#delivery-banner {
+    color: wheat;
+    background-color: #342211;
+}
+
+/* --- FOOTER --- */
 
 footer {
     color: lightgray;
@@ -43,6 +114,17 @@ footer {
 .footer-links:hover {
     color: darkgreen;
     text-decoration: none;
+}
+
+.privacy-policy, .about {
+    color: lightgray;
+    font-size: small;
+}
+
+.privacy-policy:hover,
+.about:hover {
+    color: darkcyan;
+    font-size: small;
 }
 
 .copyright-banner {
@@ -82,60 +164,6 @@ footer {
     width: 1.5rem;
 }
 
-.logo-font {
-    text-transform: uppercase;
-}
-
-.main-logo-link {
-    width: fit-content;
-}
-
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
-}
-
-.btn-black {
-    background: black;
-    color: white;
-}
-
-.btn-outline-black {
-    background: white;
-    color: black !important; /* use important to override link colors for a elements */
-    border: 1px solid black;
-}
-
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: black;
-    color: white !important;
-}
-
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
-}
-
-.text-black {
-    color: #000 !important;
-}
-
-.border-black {
-    border: 1px solid black !important;
-}
-
-.bg-black {
-    background: #000 !important;
-}
-
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -144,25 +172,6 @@ footer {
 	position: fixed;
 	background: rgb(210, 200, 191);
 	z-index: -1;
-}
-
-a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fff !important;
-}
-
-.btt-button {
-    height: 42px;
-    width: 42px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
-.btt-link,
-.update-link,
-.remove-item {
-    cursor: pointer;
 }
 
 input[name='q']::placeholder {
@@ -291,19 +300,19 @@ input[name='q']::placeholder {
 	/* btn */
 	display: inline-block;
     font-weight: 400;
-    color: #fff;
+    color: wheat;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #342211;
+    border: 1px solid transparent;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 0;
+    border-radius: 0.25rem;
 
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -311,13 +320,13 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
-    background-color: #222;
-    border-color: #222;
+	color: #28a745;
+    background-color: #342211;
+    border-color: transparent;
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: darkcyan; /* text-info */
 }
 
 /* --- MEDIA QUERIES --- */
