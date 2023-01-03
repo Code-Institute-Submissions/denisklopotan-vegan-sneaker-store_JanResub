@@ -1,7 +1,12 @@
-/* --- MAIN --- */
+/* ------ MAIN ------ */
 
 html {
     height: 100%;
+}
+
+header {
+    /* use important to override link colors for a elements */
+    background-color: #8eb08a !important; 
 }
 
 body {
@@ -11,12 +16,41 @@ body {
     color: rgb(0, 0, 0);
 }
 
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #d2c8bf;
+	z-index: -1;
+}
+
 .home-text {
     color: rgb(0, 0, 0);
 }
 
-.bg-white {
-    background-color: #8eb08a !important;
+/* --- NAVBAR --- */
+
+.navbar-logo {
+    width: fit-content;
+    color: #342211 !important;
+    text-transform: uppercase;
+    /* font-family: 'Antic Didone', cursive; */
+}
+
+/* topnav icons */
+.search-icon, .user-icon, .wishlist-icon, .bag-icon {
+    color: #342211 !important;
+}
+
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
+#delivery-banner {
+    color: wheat;
+    background-color: #342211;
 }
 
 /* --- BUTTONS --- */
@@ -35,7 +69,7 @@ body {
 
 .btn-reverse {
     background: #957050;
-    color: wheat !important; /* use important to override link colors for a elements */
+    color: wheat !important;
 }
 
 .btn-reverse:hover,
@@ -49,6 +83,7 @@ body {
     border: 1px solid #342211 !important;
 }
 
+/* category selection */
 .category-badge {
     color: #342211 !important;
 }
@@ -69,31 +104,18 @@ a.category-badge > span.badge:hover {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    background: #d2c8bf;
 }
 
 .btt-link,
 .update-link,
 .remove-item {
     cursor: pointer;
+    color: darkgreen;
 }
 
-/* --- HEADER --- */
-
-.navbar-logo {
-    width: fit-content;
-    color: #342211 !important;
-    text-transform: uppercase;
-    /* font-family: 'Antic Didone', cursive; */
-}
-
-/* topnav icons */
-.search-icon, .user-icon, .wishlist-icon, .bag-icon {
-    color: #342211 !important;
-}
-
-#delivery-banner {
-    color: wheat;
-    background-color: #342211;
+.btt-link:hover {
+    color: darkgreen;
 }
 
 /* --- FOOTER --- */
@@ -156,27 +178,13 @@ footer {
 }
 
 /* from Bulma */
-.icon {
+/* .icon {
     align-items: center;
     display: inline-flex;
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
-}
-
-.overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: rgb(210, 200, 191);
-	z-index: -1;
-}
-
-input[name='q']::placeholder {
-    color: #aab7c4;
-}
+} */
 
 /* --- BOOTSTRAP TOASTS --- */
 

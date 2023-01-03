@@ -151,7 +151,8 @@ To improve our SEO rating we did the following:
 
 #### **Content marketing**
 
-At this point we are just building the brand so content marketing is not so developed as we would like. Most content would be provided trough newsletter or Faceboook page posts. Features to be implemented like blog posts would greatly improve this rating!
+At this point we are just building the brand so content marketing is not so developed as we would like. Most content would be provided trough newsletter or Faceboook page posts.
+Additionally we created **About Us** page to add extra content and engage user. Features to be implemented like blog posts would further greatly improve this rating!
 
 #### **Social Media marketing**
 
@@ -422,7 +423,7 @@ To summarise, website passed all testing without any major issues.
 ## Bugs
 
 Footer width on My Profile page
-
+Password reset not working
 
 ### Webhooks failing *solved
 
