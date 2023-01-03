@@ -45,16 +45,16 @@
                     {% endif %}
 
                     <!-- Wishlist button -->
-                    {% if is_favorite and request.user.is_authenticated %}
+                    {% if is_wished and request.user.is_authenticated %}
                     <p class="small mt-1 mb-0">	
-                        <a class="text-success" href="{% url 'add_remove_favorite' product.id %}">
+                        <a class="text-success" href="{% url 'add_remove_wish' product.id %}">
                             <i class="fas fa-heart mr-1"></i>
                         </a>
                     </p>
                     {% endif %}
-                    {% if request.user.is_authenticated and not is_favorite %}
+                    {% if request.user.is_authenticated and not is_wished %}
                     <p class="small mt-1 mb-0">
-                        <a class="text-success" href="{% url 'add_remove_favorite' product.id %}">
+                        <a class="text-success" href="{% url 'add_remove_wish' product.id %}">
                             <i class="far fa-heart mr-1"></i>
                         </a>
                     </p>

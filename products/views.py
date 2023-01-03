@@ -63,14 +63,15 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
-    is_favorite = False
+    # Wishlist >custom model< wish status view
+    is_wished = False
 
-    if product.favourites.all().filter(id=request.user.id).exists():
-        is_favorite = True
+    if product.wishlist.all().filter(id=request.user.id).exists():
+        is_wished = True
 
     context = {
         'product': product,
-        'is_favorite': is_favorite,
+        'is_wished': is_wished,
     }
 
     # Review >custom model< view
@@ -154,23 +155,28 @@ def delete_product(request, product_id):
     return redirect(reverse('products'))
 
 
-# Favourites >custom model< view
-def add_remove_favorite(request, product_id):
-    """ Add / remove from favorite """
+# Wishlist >custom model< add/remove view
+def add_remove_wish(request, product_id):
+    """ Add / remove from wishlist """
     print(request)
 
     product = get_object_or_404(Product, pk=product_id)
 
-    if product.favourites.filter(id=request.user.id).exists():
-        product.favourites.remove(request.user)
+    if product.wishlist.filter(id=request.user.id).exists():
+        product.wishlist.remove(request.user)
     else:
-        product.favourites.add(request.user)
+        product.wishlist.add(request.user)
 
     return redirect('product_detail', product_id=product_id)
 
+# Wishlist page
+def wishlist(request):
+
+    return render(request, 'products/wishlist.html')
+
 # # Favourites >custom model< view
 # def favourites(request, product_id):
-#     """ Add / remove from favourites """
+#     """ favourites page """
 #     product = get_object_or_404(Product, pk=product_id)
 #     if product.favourites.filter(id=request.user.id).exist():
 #         product.favourites.remove(request.user)
