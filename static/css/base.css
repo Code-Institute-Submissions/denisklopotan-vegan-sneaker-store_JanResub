@@ -13,7 +13,8 @@ body {
     background: url('/media/nike-sb-stefan-janoski-max-white-black-homepage.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: rgb(0, 0, 0);
+    color: #342211;
+    font-family: Geneva, Tahoma, sans-serif;
 }
 
 .overlay {
@@ -26,15 +27,12 @@ body {
 	z-index: -1;
 }
 
-.home-text {
-    color: rgb(0, 0, 0);
-}
-
 .shop-now-title {
     color: #28a745;
     text-shadow: #342211 0 0 0.4em, #342211 0 0 0.4em, #342211 0 0 0.4em;
 }
 
+/* product page link */
 .products-home {
     color: darkgreen !important;
     text-transform: uppercase;
@@ -47,7 +45,9 @@ body {
     width: fit-content;
     color: #342211 !important;
     text-transform: uppercase;
-    /* font-family: 'Antic Didone', cursive; */
+    font-weight: bolder;
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'East Sea Dokdo', cursive; */
 }
 
 .nav-desktop {
@@ -55,6 +55,11 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     color: #342211 !important;
+}
+
+/* push icons off the top */
+.nav-ul {
+    padding-top: 6px;
 }
 
 .nav-link {
@@ -140,6 +145,13 @@ a.category-badge > span.badge:hover {
 
 .btt-link:hover {
     color: darkgreen;
+}
+
+/* --- BODY --- */
+
+/* product card */
+.card-footer {
+    background-color: white;
 }
 
 /* --- FOOTER --- */
@@ -362,6 +374,15 @@ footer {
 }
 
 /* --- MEDIA QUERIES --- */
+
+/* Hide short text by default (resolution > 1200px) */
+.short-text { display: none; }
+
+/* When resolution <= 1200px, hide full text and show short text */
+@media (max-width: 1200px) {
+    .short-text { display: inline-block; }
+    .full-text { display: none; }
+}
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
