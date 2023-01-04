@@ -47,14 +47,13 @@ body {
     text-transform: uppercase;
     font-weight: bolder;
     font-family: 'Oswald', sans-serif;
-    /* font-family: 'East Sea Dokdo', cursive; */
 }
 
 .nav-desktop {
     font-size: medium;
-    font-weight: bold;
     text-transform: uppercase;
     color: #342211 !important;
+    text-decoration: none !important;
 }
 
 /* push icons off the top */
@@ -212,15 +211,6 @@ footer {
     /* background-color: darkgreen; */
     background-color: #342211;
 }
-
-/* from Bulma */
-/* .icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
-} */
 
 /* --- BOOTSTRAP TOASTS --- */
 

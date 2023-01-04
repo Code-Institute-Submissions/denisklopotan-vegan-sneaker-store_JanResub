@@ -81,6 +81,7 @@ For full details please check out our link on Github: [V.S. Store User Stories](
 * As a user I can access media links so that i can discover more of authors work or contact trough other means
 * As a registered user I can write a product review so that i can give an honest feedback
 * As a user I can like products so that i can save them to wishlist for future reference
+* As a user I can read about page so that i can know more about site or owner
 
 ### Wireframes
 
@@ -174,18 +175,27 @@ If you want to use Mailchimp for your site please visit their website [here](htt
 
 Lastly, to be compliant with GDPR or 'General Data Protection Regulation' and furthermore improve our sites rating we generated 'Privacy Policy' using online generator - [Privacy Policy Generator](https://www.privacypolicygenerator.info/). Link is embedded in the footer of the site.
 
+![policy](media/privacy-policy.png) 
+
 ***
 ## Features
 
 ### Homepage
 Homepage consists of top navbar which is collapsible on mobile screens, main section with shop now button and footer. More about it in the following sections.
-![home](media/homepage.png) 
+![home](media/home.png) 
 
 ### Navbar
-Navbar contains store Logo / title on the left, search bar in the top middle, category dropdowns below it, account, favorites and shopping bag links on the top right. Underneath is delivery banner showing delivery treshold. All the links in dropdowns lead to their respectible pages.
+Navbar contains store logo / title on the left which compresses on medium screens and collapses on mobile; search bar in the top middle, category dropdowns below it, account, wishlist and shopping bag links to the right. Underneath is delivery banner showing delivery treshold. All the links in dropdowns lead to their respectible pages.
 ![navbar](media/navbar.png)
 
-ALL PRODUCTS, SNEAKERS, SPECIAL OFFERS and My Account contain dropdown links.
+<details>
+<summary>Logo collapsed</summary>
+
+![navbar](media/logo-small.png)
+</details>  
+
+**ALL PRODUCTS**, **SNEAKERS**, **SPECIAL OFFERS** and **My Account** contain dropdown links with sorting by category or links to respective pages.
+
 <details>
 <summary>Products dropdown</summary>
 
@@ -199,15 +209,40 @@ ALL PRODUCTS, SNEAKERS, SPECIAL OFFERS and My Account contain dropdown links.
 </details>
 
 ### Body
-Contains button link to products page.
+Body is characterised by sneaker background with **Shop now** button link to products page.
 ![body](media/body.png)
 
 ### Footer
-Footer contains link to Contact form, Social media sites like Facebook business page, Privacy Policy and on the right Mailchimp form with which users can subscribe to newsletter.
+Footer contains link to Contact form, Social media sites like Facebook business page, Privacy Policy and on the right Mailchimp form with which users can subscribe to newsletter. On the very bottom is located Copyright bar with **Github** link of author.
 ![footer](media/footer.png) 
 
+<details>
+<summary>Contact Us</summary>
+
+![footer](media/contact.png) 
+</details>
+
+<details>
+<summary>Facebook</summary>
+
+![footer](media/facebook-business-page.png) 
+</details>
+
+<details>
+<summary>About Us</summary>
+
+![footer](media/about.png) 
+</details>
+
+<details>
+<summary>Privacy Policy</summary>
+
+![footer](media/privacy-policy.png) 
+</details>
+
 ### Products list
-Product page contains list of products which can be sorted by categories using category selector or selecting from the dropdown menu.
+Product page contains list of products which can be sorted by categories using category selector or selecting from the dropdown menu. Clicking on product item leads us to Product detail page.
+
 ![products](media/products-list.png) 
 
 <details>
@@ -223,23 +258,29 @@ Product page contains list of products which can be sorted by categories using c
 </details>
 
 ### Product detail
-Product detail page showcases: Product title, description, price, rating, category, favorites button, size selector, quantity selector, buttons, product review form and if user is admin; it contains edit|delete buttons for product managment.
+Product detail page showcases: Product title, price, category, rating, wishlist button (if user authenticated), and if user is admin; it contains edit | delete buttons for product managment. Furthermore it includes description, size selector, quantity selector, buttons and product review form. Again, to be able to post review and leave rating user needs to be registered / logged in.
 ![products](media/product-detail.png) 
+
+#### Like and unlike function:
+
+Products are unliked by default (empty heart). When authenticated user clicks on heart, like is stored in the database and stays rendered as full until user clicks again and removes it from database.
+
+![products](media/unlike.png) ---> ![products](media/like.png)
 
 <details>
 <summary>Size and quantity selector</summary>
 
-![accounts](media/size-quantity.png)  
+![products](media/size-quantity.png)  
 </details>
 
 <details>
 <summary>User reviews</summary>
 
-![accounts](media/review.png)  
+![products](media/review.png)  
 </details>
 
 ### Accounts
-Users have option to Login / Register by which they can access and edit their user profile and see also order history. If authenticated user is Admin, it can access roduct Managment panel from which it can edit or delete store products without need to go to admin panel.
+Users have option to Login / Register by which they can access and edit their user profile and see also order history. If authenticated user is Admin, it can access Product Managment panel from which it can edit or delete store products without need to go to admin panel.
 ![accounts](media/profile.png)  
 
 <details>
@@ -261,28 +302,46 @@ Users have option to Login / Register by which they can access and edit their us
 </details>
 
 <details>
+<summary>Password Reset</summary>
+
+![accounts](media/password-reset.png)  
+</details>
+
+<details>
 <summary>Product Managment</summary>
 
-![accounts](media/product-managment.png)  
+![accounts](media/product-managment.png)
+</details>
+
+<details>
+<summary>Product Managment 2</summary>
+
+![accounts](media/product-managment2.png)
 </details>
 
 ### Shopping bag
-Shopping bag allows us to adjust quantity inside bag itself and provides link to product page or checkout. After order has been succesfuly added we are informed by pop-up message in top right corner.
+Shopping bag allows us to adjust quantity inside bag itself and provides link to product page or checkout. After order has been succesfuly added we are informed by pop-up message in top right corner. We can chose to continue by pressing button in pop-up or the one on bottom of the page.
 ![shoppingbag](media/shopping-bag.png) 
 
 <details>
 <summary>Pop-up message - Added to bag</summary>
 
-![navbar](media/success-message.png) 
+![navbar](media/success-message2.png) 
 </details>
 
 ### Checkout
-Checkout page provides billing form connected with Stripe, our order details and link to checkout. After order has been succesfully placed we are notified via pop-up message and presented with order summary.
+Checkout page provides billing form connected with Stripe, our order details and link to checkout. When clicking on final checkout screen is temporarily muted with **Overlay** during processing. After order has been succesfully placed we are notified via pop-up message and presented with order summary.
 ![checkout](media/checkout.png) 
 <details>
 <summary>Checkout - part 2</summary>
 
 ![checkout](media/checkout2.png) 
+</details>
+
+<details>
+<summary>Payment Overlay</summary>
+
+![checkout](media/payment-overlay.png) 
 </details>
 
 <details>
@@ -332,10 +391,19 @@ Mobile page is fully responsive and contains hamburger icon or toggler which is 
 
 ### To be implemented
 
-Features to implement:
+#### Wishlist page
 
-- Password recovery
-- Blog post
+We implemented wishlist model so users can save their likes / unlikes in database and see them in product detail. To make it more user friendly we want to render these liked products on html page. 
+
+![wishlist](media/wishlist.png) 
+
+#### Blog post
+
+To improve our SEO and content marketing and make users more engaged we definitely want to expand on blog idea and add regular monthly articles on our page.
+
+#### Review model
+
+We want to integrate review model ratings with product ratings and replace rating numbering with **star** icons.
 
 ***
 ## Technologies
@@ -448,7 +516,8 @@ Full article on slack can be found [here](https://code-institute-room.slack.com/
 ### Unresolved:
 
 - Footer width on My Profile page
-- Footer positioning on pages with no content
+- Footer positioning on pages with minimum or no content
+- Other smaller css stylings or adaptations
 
 ***
 ## Deployment
@@ -491,6 +560,8 @@ Alongside Code Institute's LMS tutorials i used following websites for education
 ### Code
 
 - [Stack Overflow](https://stackoverflow.com/)
+   - [Django - Add products to favorite list](https://stackoverflow.com/questions/67493992/django-add-products-to-favorite-list)
+   - [How to change text (not font size) according to screen size in CSS?](https://stackoverflow.com/questions/39894291/how-to-change-text-not-font-size-according-to-screen-size-in-css)
 - [Product reviews - How to build an Ecommerce website using Django](https://www.youtube.com/watch?v=Y5vvGQyHtpM)
    - Github repo: [saulgadgets](https://github.com/SteinOveHelset/saulgadgets)
 - [Create Contact Form in Django for any website](https://www.youtube.com/watch?v=lSgRWA4PMt4)
@@ -498,7 +569,6 @@ Alongside Code Institute's LMS tutorials i used following websites for education
 ### Media
 
 - Royalty free media for our site we downloaded from free image hosting sites [Unsplash](https://unsplash.com/) & [Pexels](https://www.pexels.com/)
-- For making background gradients we used online tool: [CSS Gradient](https://cssgradient.io/) 
 - Logo was created on [LOGO.com](https://logo.com/)  
 
 ***

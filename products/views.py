@@ -171,15 +171,5 @@ def add_remove_wish(request, product_id):
 
 # Wishlist html page view
 def wishlist(request):
-
-    user=request.user
-    wishlist_items = user.wishlist.all()
-    
-    context = {
-        'wishlist_items': wishlist_items
-    }
-
-    return render(request, 'products/wishlist.html', context)
-
-    # return render(request, 'favourites/product_favourite_list.html', context)
-
+    """ To be implemented """
+    return render(request, 'products/wishlist.html')
