@@ -142,17 +142,21 @@ All features listed there where proven to work as espected, as follows:
 
 Homepage with:
 - Navbar
-  - All navbar dropdown menus and search bar work as expected, except Favorites feature which is to be implemented
+  - All navbar dropdown menus and search bar work as expected, note* Wishlist product page is still to be implemented.
+  - Navbar collapses on mobile
+  - Logo resizes on smaller screens
 - Body
    - Shop now button brings us to the products page
 - Footer
-   - media links, contact and mailchimp form works
+   - contact us, facebook link, about us, privacy policy links open as intended, and mailchimp form and contact form work proper. 
+   - copyrights link to author github works
 
 Products:
 - Products page
    - Clicking on individual products brings us Product detail page
 - Product detail
    - Choosing sizes quantity and adding to bag works properly
+   - Liking / unliking product edits database and heart icon respectively
 
 Accounts:
 - Register / Login
@@ -161,17 +165,22 @@ Accounts:
    - Updating product fields works as expected
 - My profile
    - On personal profile details can be updated
-- Logout
+- Logout works
+- Password recovery works only from deployed site, not from local enviroment
 
-Purchasing
+Purchasing:
 - Shopping bag
    - Updating item quantity in bag works
 - Checkout form is working properly and orders are placed
+- Purchase overlay shows after purchase
+- Stripe webhooks and processes pass correctly and are visible on Stripe dashboard
 
-Contact us form
+Rest:
+- Toasts pop-up respectively, on purchases, errors, etc..
+- 404 page shows correctly when trying to access restricted or non-existing domain.
+- External links open in new window
 
-To be implemented:
-- Favorites feature is currently not working so link is not functional
+Mobile categories, dropdowns, links and all features as on desktop work as intended.
 
 ## Unit Testing
 

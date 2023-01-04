@@ -577,7 +577,9 @@ Alongside Code Institute's LMS tutorials i used following websites for education
 So...my 5 minutes of Oscars speech has finally came ;D
 
 Always, big big thanks to my mentor Jack Wachira, slack community, tutors and student support! :)  
-To my family, friends and colleagues for their understanding and support too!  
+Nemanja, JoGOrska, jo_ci, Ed B, Eventyret_mentor, Daisy_mentor and many many more!    
+
+To my family, friends and colleagues for their understanding and support too! 
 
 NO, i was not abducted by aliens and i still love you all! I was just locked in my 'office' until i finish this lovely episode of life :))
 Even though i stumbled a lot along the way,
