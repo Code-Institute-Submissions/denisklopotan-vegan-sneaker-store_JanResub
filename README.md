@@ -422,9 +422,6 @@ To summarise, website passed all testing without any major issues.
 ***
 ## Bugs
 
-Footer width on My Profile page
-Password reset not working
-
 ### Webhooks failing *solved
 
 While following tutorial exactly as explained i still got webhooks failing. After consulting on slack and with tutors i found out the issue. It was due to module update for Stripe webhook handler that in my case was not necessary. I just needed to revert to original tutorial and it worked!
@@ -447,6 +444,11 @@ So by deleting 'charge' instance and reverting back to original solved the issue
         grand_total = round(intent.charges.data[0].amount / 100, 2)
 
 Full article on slack can be found [here](https://code-institute-room.slack.com/archives/C7HS3U3AP/p1669282486321559).
+
+### Unresolved:
+
+- Footer width on My Profile page
+- Footer positioning on pages with no content
 
 ***
 ## Deployment

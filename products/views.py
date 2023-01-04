@@ -169,18 +169,17 @@ def add_remove_wish(request, product_id):
 
     return redirect('product_detail', product_id=product_id)
 
-# Wishlist page
+# Wishlist html page view
 def wishlist(request):
 
-    return render(request, 'products/wishlist.html')
+    user=request.user
+    wishlist_items = user.wishlist.all()
+    
+    context = {
+        'wishlist_items': wishlist_items
+    }
 
-# # Favourites >custom model< view
-# def favourites(request, product_id):
-#     """ favourites page """
-#     product = get_object_or_404(Product, pk=product_id)
-#     if product.favourites.filter(id=request.user.id).exist():
-#         product.favourites.remove(request.user)
-#     else:
-#         product.favourites.add(request.user)
-        
-#     return render(request, 'products/product_detail.html')
+    return render(request, 'products/wishlist.html', context)
+
+    # return render(request, 'favourites/product_favourite_list.html', context)
+

@@ -28,7 +28,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
-                    <p class="mb-0">{{ product.name }}</p>
+                    <h4 class="mb-0">{{ product.name }}</h4>
                     <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
                     {% if product.category %}	
                     <p class="small mt-1 mb-0">	
@@ -139,11 +139,15 @@
                     <div>
                         {% for review in product.reviews.all %}
                             <div>
-                                <p>
-                                    <strong>Date: </strong>{{ review.date_added|date:"Y-m-d" }},
-                                    <strong>Stars: </strong>{{ review.stars }}
+                                <p> 
+                                    <small class="text-success"><i class="fas fa-star mr-1"></i>{{ review.stars }}/5</small>
+
+                                    <small><strong>{{ review.user }}</strong> wrote:</small>
                                 </p>
                                 {{ review.content }}
+                                <p>
+                                    <small class="text-muted">{{ review.date_added|date:"d-m-Y" }}</small>
+                                </p>
                             </div>
                         {% empty %}
                             <div>
@@ -151,12 +155,13 @@
                             </div>
                         {% endfor %}
                     </div>
+                    <hr>
                     <div>
                         {% if request.user.is_authenticated %}
                             <form method="post" action=".">
                                 {% csrf_token %}
                                 <div>
-                                    <label>Stars</label>
+                                    <label><h5>Write review:</h5></label>
                                     <div>
                                         <select name="stars">
                                             <option value="1">1</option>
@@ -164,13 +169,12 @@
                                             <option value="3" selected>3</option>
                                             <option value="4">4</option>
                                             <option value="5">5</option>
-                                        </select>
+                                        </select> Rating
                                     </div>
                                 </div>
                                 <div>
-                                    <label>Content</label>
                                     <div>
-                                        <textarea class="textarea w-50" name="content"></textarea>
+                                        <textarea class="textarea w-50" style="height: 100px;" name="content"></textarea>
                                     </div>
                                 </div>
                                 <button class="btn btn-all text-uppercase">Submit</button>

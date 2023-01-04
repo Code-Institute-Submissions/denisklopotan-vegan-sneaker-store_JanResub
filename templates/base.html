@@ -49,7 +49,7 @@
         <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">	
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link navbar-logo">
-                    <h2 class="my-0"><strong>Vegan Sneaker Store</strong></h2>
+                    <h2 class="my-0"><strong style="color: darkgreen;">Vegan</strong> Sneaker Store <i class="fas fa-leaf" style="color: darkgreen;"></i></h2>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -69,7 +69,7 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
-                        <a class="user-icon nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="user-icon nav-desktop" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">My Account</p>
@@ -89,7 +89,7 @@
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="wishlist-icon nav-link" href="{% url 'wishlist' %}">
+                        <a class="wishlist-icon nav-desktop" href="{% url 'wishlist' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-heart fa-lg"></i></div>
                                 <p class="my-0">Wishlist</p>
@@ -97,7 +97,7 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-success font-weight-bold{% else %}bag-icon{% endif %} nav-link" href="{% url 'view_bag' %}">
+                        <a class="{% if grand_total %}text-success nav-desktop font-weight-bold{% else %}bag-icon{% endif %}" href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">

@@ -30,6 +30,17 @@ body {
     color: rgb(0, 0, 0);
 }
 
+.shop-now-title {
+    color: #28a745;
+    text-shadow: #342211 0 0 0.4em, #342211 0 0 0.4em, #342211 0 0 0.4em;
+}
+
+.products-home {
+    color: darkgreen !important;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
 /* --- NAVBAR --- */
 
 .navbar-logo {
@@ -37,6 +48,19 @@ body {
     color: #342211 !important;
     text-transform: uppercase;
     /* font-family: 'Antic Didone', cursive; */
+}
+
+.nav-desktop {
+    font-size: medium;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #342211 !important;
+}
+
+.nav-link {
+    font-size: large;
+    text-transform: uppercase;
+    color: #342211 !important;
 }
 
 /* topnav icons */
